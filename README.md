@@ -22,17 +22,16 @@
 
 ### 课表显示
 
-<img src="https://github.com/qidunwei/AhutCourse_mobile/blob/master/app/extra/kebiao.jpg）" width = "450" alt="" align=center />
-![](./app/extra/kebiao.jpg)
+![](./app/extra/kebiao-1.jpg)
 
 ### 成绩查询
 
-![](./app/extra/changji.jpg)
+![](./app/extra/chengji-1.jpg)
 
 ### 考试查询
 
-![](./app/extra/kaoshi.jpg)
+![](./app/extra/kaoshi-1.jpg)
 
 ### 关于
 
-![](./app/extra/guanyu.jpg)
+![](./app/extra/guanyu-1.jpg)
