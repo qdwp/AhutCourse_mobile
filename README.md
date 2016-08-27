@@ -1,6 +1,6 @@
 # AhutCourse_mobile
 
-## 安工大课表系统 - “哎课”（Android）
+## 大学生个人课表系统 - “哎课”（Android）
 
 **描述**
 
