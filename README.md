@@ -22,11 +22,12 @@
 
 ### 课表显示
 
+<img src="./app/extra/kebiao.jpg）" width = "200" alt="" align=center />
 ![](./app/extra/kebiao.jpg)
 
 ### 成绩查询
 
-![](./app/extra/chengji.jpg)
+![](./app/extra/changji.jpg)
 
 ### 考试查询
 
