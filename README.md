@@ -22,7 +22,7 @@
 
 ### 课表显示
 
-<img src="./app/extra/kebiao.jpg）" width = "200" alt="" align=center />
+<img src="https://github.com/qidunwei/AhutCourse_mobile/blob/master/app/extra/kebiao.jpg）" width = "450" alt="" align=center />
 ![](./app/extra/kebiao.jpg)
 
 ### 成绩查询
