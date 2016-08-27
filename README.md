@@ -22,16 +22,16 @@
 
 ### 课表显示
 
-![id1](https://github.com/qidunwei/AhutCourse_mobile/app/extra/kebiao.jpg)
+![](./app/extra/kebiao.jpg)
 
 ### 成绩查询
 
-![id2](https://github.com/qidunwei/AhutCourse_mobile/app/extra/chengji.jpg)
+![](./app/extra/chengji.jpg)
 
 ### 考试查询
 
-![id3](https://github.com/qidunwei/AhutCourse_mobile/app/extra/kaoshi.jpg)
+![](./app/extra/kaoshi.jpg)
 
 ### 关于
 
-![id4](https://github.com/qidunwei/AhutCourse_mobile/app/extra/guanyu.jpg)
+![](./app/extra/guanyu.jpg)
