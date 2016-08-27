@@ -1,0 +1,35 @@
+﻿<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#a0a0e0 }
+      div.title    { 
+          color:#04B51D; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#04B51D; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#F0F0F0 }
+      div.list     { color:#9191B5 }
+    </style>
+  </head>
+  <body>
+$ 1.0
+  % Version 1.0
+  _ 2016-03-27
+  * 首先感谢<b>ohrz</b>学长公布了<b>"课友2.4"</b>的源码，为本程序提供了课表的布局
+  * 显示个人课程表信息
+  * 自定义开学时间、上课季节
+  * 成绩信息查询
+  * 考试信息查询
+  * 补考信息查询
+  * 平均学分绩查询
+  * 预计将在下一版本添加考勤查询功能
+$ END_OF_CHANGE_LOG
+  </body>
+</html>

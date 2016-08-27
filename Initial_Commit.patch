@@ -1,0 +1,127 @@
+Index: app/src/main/java/com/lesson/myahut/handler/LessonManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/lesson/myahut/handler/LessonManager.java	(revision 2a1db3555f444cdfb54a2b1a06d3690fd0a621e6)
++++ app/src/main/java/com/lesson/myahut/handler/LessonManager.java	(revision )
+@@ -2,15 +2,11 @@
+ 
+ import java.util.ArrayList;
+ import java.util.Iterator;
+-import java.util.List;
+ 
+ import android.content.ContentValues;
+ import android.content.Context;
+-import android.content.SharedPreferences;
+-import android.content.SharedPreferences.Editor;
+ import android.database.Cursor;
+ import android.database.sqlite.SQLiteDatabase;
+-import android.preference.PreferenceManager;
+ import android.util.Log;
+ 
+ import com.lesson.myahut.entity.LessonInfo;
+Index: app/src/main/java/com/lesson/myahut/util/DatabaseHelper.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/lesson/myahut/util/DatabaseHelper.java	(revision 2a1db3555f444cdfb54a2b1a06d3690fd0a621e6)
++++ app/src/main/java/com/lesson/myahut/util/DataBaseHelper.java	(revision )
+@@ -14,24 +14,30 @@
+ /**
+  * Created by qidunwei on 2016/1/13.
+  */
+-public class DatabaseHelper extends SQLiteOpenHelper {
++public class DataBaseHelper extends SQLiteOpenHelper {
+ 
+-    public DatabaseHelper(Context context, String name, CursorFactory cursorFactory,
++    public DataBaseHelper(Context context, String name, CursorFactory cursorFactory,
+                           int version) {
+         super(context, name, cursorFactory, version);
+     }
+ 
+     public static final int dbVersion = 1;
+     public static final String lessonTableName = "myLesson";
++    public static final String userInfoTableName = "userInfo";
++    public static final String createUserInfoTableCmd = "CREATE Table "+ userInfoTableName +"(_id INTEGER PRIMARY KEY AUTOINCREMENT, userXH TEXT, userPW TEXT, userXM TEXT, userBJ TEXT,userXY TEXT, userZY TEXT);";
+     public static final String createLessonTableCmd = "CREATE TABLE " + lessonTableName + " (_id INTEGER PRIMARY KEY AUTOINCREMENT, lessonname TEXT, teachername TEXT, lessonplace TEXT, startweek INTEGER, endweek INTEGER, week INTEGER ,time INTEGER);";
+ 
+-    public DatabaseHelper(Context baseContext, String name) {
++    public DataBaseHelper(Context baseContext, String name) {
+         super(baseContext, name, null, dbVersion);
+     }
+ 
+-
++    /**
++     * 创建数据库表
++     * @param db
++     */
+     @Override
+     public void onCreate(SQLiteDatabase db) {
++        db.execSQL(createUserInfoTableCmd);
+         db.execSQL(createLessonTableCmd);
+     }
+ 
+Index: app/src/main/java/com/lesson/myahut/entity/lessonInfo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/lesson/myahut/entity/lessonInfo.java	(revision 2a1db3555f444cdfb54a2b1a06d3690fd0a621e6)
++++ app/src/main/java/com/lesson/myahut/entity/LessonInfo.java	(revision )
+@@ -3,12 +3,12 @@
+ /**
+  * Created by qidunwei on 2016/1/27.
+  */
+-public class lessonInfo {
+-    public String lesson;
++public class LessonInfo {
++    public String name;
+     public String place;
+     public String teacher;
+     public int week;
+     public int time;
+-    public int start_time;
+-    public int end_time;
++    public int start_week;
++    public int end_week;
+ }
+Index: app/src/main/java/com/lesson/myahut/handler/UserManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/lesson/myahut/handler/UserManager.java	(revision 2a1db3555f444cdfb54a2b1a06d3690fd0a621e6)
++++ app/src/main/java/com/lesson/myahut/handler/UserManager.java	(revision )
+@@ -2,18 +2,14 @@
+ 
+ import android.content.ContentValues;
+ import android.content.Context;
+-import android.content.SharedPreferences;
+ import android.database.Cursor;
+ import android.database.sqlite.SQLiteDatabase;
+-import android.util.Log;
+ 
+ import com.lesson.myahut.api.HttpEntity;
+ import com.lesson.myahut.entity.UserInfo;
+ import com.lesson.myahut.entity.UserLessonInfo;
+ import com.lesson.myahut.util.DataBaseHelper;
+ 
+-import java.util.Iterator;
+-
+ /**
+  * Created by qidunwei on 2016/1/14.
+  */
+@@ -41,10 +37,7 @@
+     }
+ 
+     public boolean hasLocalUser() {
+-        if (getUserXH() != null)
+-            return true;
+-        else
+-            return false;
++        return getUserXH() != null;
+     }
+ 
+     public String getUserXH() {

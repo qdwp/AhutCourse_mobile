@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">哎课</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_refresh">刷新课表</string>
+    <string name="action_begin_time">开学日期</string>
+    <string name="action_update">检查更新</string>
+    <string name="action_logout">注销</string>
+    <string name="action_about">关于</string>
+
+    <string name="changelog_full_title">更新记录</string>
+    <string name="changelog_title">新版功能：</string>
+    <string name="changelog_ok_button">知道了</string>
+    <string name="changelog_no_button">分享</string>
+    <string name="changelog_show_full">更多...</string>
+
+    <string-array name="week_name">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    <string-array name="lessontime_name">
+        <item>上午一二节</item>
+        <item>上午三四节</item>
+        <item>下午五六节</item>
+        <item>下午七八节</item>
+        <item>晚上九十节</item>
+    </string-array>
+
+    <!-- setting -->
+    <string name="setting_begin_time">开学时间</string>
+    <string name="setting_winter">冬季时间</string>
+
+    <!-- login -->
+    <string name="login_title">课程助手-登录</string>
+    <string name="login_name_hint">请输入学号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+
+    <!-- score -->
+    <string name="score_title">成绩查询</string>
+    <string name="score_uid">输入学号：</string>
+    <string name="score_tid">身份证号：</string>
+    <string name="score_xn">选择学年：</string>
+    <string name="score_xq">选择学期：</string>
+    <string name="score_uid_hint">请输入学号</string>
+    <string name="score_tid_hint">请输入身份证号</string>
+    <string name="score_view_title">成绩信息</string>
+
+    <!-- task -->
+    <string name="task_title">考试查询</string>
+    <string name="task_pwd">输入密码：</string>
+    <string name="task_view_title">考试信息</string>
+
+    <!-- makeup -->
+    <string name="makeup_title">补考查询</string>
+    <string name="makeup_view_title">补考信息</string>
+
+    <!-- avgpoint -->
+    <string name="avgpoint_title">学分绩点</string>
+    <string name="title_activity_login_">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user">请输入学号</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">请输入信息</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="serverurl"></string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_scoreInfo"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="成绩查询" />
+    <item
+        android:id="@+id/nav_taskInfo"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="考试查询" />
+    <item
+        android:id="@+id/nav_makeup"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="补考查询" />
+    <item
+        android:id="@+id/nav_avgPoint"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="学分绩点" />
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

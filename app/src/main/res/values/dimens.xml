@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">15dp</dimen>
+    <dimen name="nav_header_height">60dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="fab_margin">15dp</dimen>
+
+    <dimen name="marginTop">40dp</dimen>
+
+    <dimen name="setting_size">25sp</dimen>
+
+    <dimen name="weekname_size">13sp</dimen>
+    <dimen name="weekname_margin">4dp</dimen>
+    <dimen name="lessonname_size">13sp</dimen>
+    <dimen name="lessonplace_size">11sp</dimen>
+    <dimen name="lessoninfo_size">12sp</dimen>
+    <dimen name="lessoninfo_padding">2dp</dimen>
+    <dimen name="lessoninfo_padding_left">4dp</dimen>
+
+    <dimen name="lessontable_margin">0dp</dimen>
+    <dimen name="logintext_width">200dp</dimen>
+
+    <dimen name="prescore_textsize">20dp</dimen>
+</resources>
