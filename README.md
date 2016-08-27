@@ -1,17 +1,37 @@
-# Ahut_mobile_course
+# AhutCourse_mobile
 
-## 中国十七冶移动OA办公系统
+## 安工大课表系统 - “哎课”（Android）
 
 **描述**
 
-系统使用`python`作为开发语言，使用`Flask`web框架
-
-以原有`.NET`框架PC版页面功能为对照，实现移动OA办公
+* 显示个人课程表信息
+* 自定义开学时间、上课季节
+* 成绩信息查询
+* 考试信息查询
+* 补考信息查询
+* 平均学分绩查询
 
 **技术实现**
 
-* 使用`http`进行模拟登陆，使用 python 的第三方库`requests`
-* `GET`、`POST`方法获取目的网页`html`或者`json`信息
-* 使用`BeautifulSoup4`解析`requests`下载的网页信息或者使用`json`解析返回信息
-* `MySQLdb`，`python` 连接 `mysql` 数据库
-* 使用 `.NET` 将 `doc`、`pdf` 文档解析为 `html` 并展示
+* 使用`http`进行模拟登陆python-webservice接口
+* 自定义 `HttpUtil` 类实现 `GET`、`POST`方法获取`json`数据
+* 使用`SQLite`数据库保存个人信息以及课程信息
+
+
+## 图片展示
+
+### 课表显示
+
+![id1](https://github.com/qidunwei/AhutCourse_mobile/app/extra/kebiao.jpg)
+
+### 成绩查询
+
+![id2](https://github.com/qidunwei/AhutCourse_mobile/app/extra/chengji.jpg)
+
+### 考试查询
+
+![id3](https://github.com/qidunwei/AhutCourse_mobile/app/extra/kaoshi.jpg)
+
+### 关于
+
+![id4](https://github.com/qidunwei/AhutCourse_mobile/app/extra/guanyu.jpg)
